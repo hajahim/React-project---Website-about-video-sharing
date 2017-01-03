@@ -1,0 +1,101 @@
+.wrapper {
+  font-family: $font-master;
+  font-size: map-get($font-size, large);
+  background-color: #efefef;
+  min-height: 700px;
+}
+
+.box {
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+.l-header {
+  background-color: #fff;
+
+  .header__container {
+    height: 50px;
+    border-bottom: 1px solid map-get($border-color, primary);
+    padding: 10px 0;
+    @media(max-width: 1024px) {
+      padding: 10px 20px;
+    }
+    & > .box {
+      height: 30px;
+      display: flex;
+      justify-content: space-between;
+    } 
+    .header__brand {
+      flex: 1;
+      &__image {
+        background: url('../images/ng-careers-logo.png') no-repeat;
+        background-size: contain;
+        display: inline-block;
+        height: 30px;
+        width: 100px;
+        @media(max-width: 499px) {
+          background: url('../images/ng-careers-logo-mobile.png') no-repeat;
+          background-size: contain;
+          height: 30px;
+          width: 30px;
+        }
+      }
+    }
+    .header__searchbar {
+      flex: 2;
+      .search-bar {
+        &__btn {
+          @media(max-width: 499px) {
+            padding: 5px 10px;
+          }
+        }
+      }
+    }
+    .header__option {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      &__button {
+        &__icon {
+          display: none;
+          @media(max-width: 499px) {
+            display: inline-block;
+            top: 0;
+            margin-right: 0;
+          }
+        }
+        &__text {
+          @media(max-width: 499px) {
+            display: none;
+          } 
+        }
+      }
+    }
+  }
+
+  .header__navbar {
+    position: relative;
+    background-color: #fff;
+    border-bottom: 1px solid #e8e8e8;
+    height: 40px;
+    @media(max-width: 1024px) {
+      padding: 0 20px;
+    }
+  }
+
+}
+
+.l-container {
+  margin: 10px 0;
+  & > .box {
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+  }   
+}
+
+.l-footer {
+  padding: 20px;
+  .footer__copyright {
+    color: map-get($font-color, link-active);
+  }
+}

@@ -1,0 +1,45 @@
+$font-size: (
+  xsmall: 9px,
+  small: 10px,
+  normal: 11px,
+  medium: 12px,
+  large: 13px,
+  larger: 14px,
+  vlarge: 15px,
+  xlarger: 16px,
+  mlarger: 20px,
+  largest: 24px,
+  xlargest: 48px
+);
+
+$font-weight: (
+  light: 200,
+  medium: 400,
+  bold: 700
+);
+
+$line-height: (
+  extra-shrink: 17px,
+  shrink: 18px,
+  normal: 20px,
+  extended: 22px,
+  super-extended: 24px,
+  more-extended: 25px,
+  very-extended: 27px,
+  extra-extended: 32px,
+  deka-extended: 36px,
+  mega-extended: 58px,
+  giga-extended: 90px
+);
+
+//templating texte
+.text {
+  font-size: map-get($font-size, normal);
+
+  ////generate text different size
+  @each $name, $size in $font-size {
+    &-#{$name} {
+        font-size: $size;
+    }
+  }
+}

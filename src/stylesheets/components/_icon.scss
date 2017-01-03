@@ -1,0 +1,22 @@
+//icon in the Website, change here if yo want to add or update icon
+$icons: (
+  user: url(../images/user-white.png),
+  search: url(../images/search.png),
+  like: url(../images/heart.png),
+  comments:  url(../images/comments.png),
+  clock:  url(../images/clock.png),
+  video: url(../images/play.png)
+);
+
+//icon base
+.icon {
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  //generate icon in the map list
+  @each $icon, $content in $icons {
+    &--#{$icon}:before {
+      content: $content;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@include fontFace('Roboto','../fonts/Roboto-Regular');
+
+$sans-font-family: Roboto, Arial, sans-serif !default;
+
+$serif-font-family: "Trebuchet MS", "Times New Roman", Times, serif !default;
+
+$font-master: $sans-font-family !default;
+
+$default-font-family: $sans-font-family !default;

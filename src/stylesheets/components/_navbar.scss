@@ -1,0 +1,22 @@
+.navbar {
+
+  .navigation {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    &__item {
+      list-style: none;
+      &__link {
+        color: map-get($font-color, link-secondary);
+        display: block;
+        padding: 11px 20px;
+        &:hover {
+          color: map-get($font-color, link-active);
+          border-bottom: 3px solid map-get($background-color, primary);
+        }
+      }
+    }
+  }
+
+}

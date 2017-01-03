@@ -1,0 +1,46 @@
+
+$primary-color: #FFA041 !default;
+$secondary-color: #fff !default;
+
+$link-primary-color: #167AC6;
+$link-primary-color-dark: #126db3;
+$link-secondary-color: #666;
+$link-active: #333;
+
+$text-primary-color: #767676;
+
+$alternative-color: #f8f8f8;
+$alternative-color-dark: #e9e9e9;
+
+$border-primary: #e8e8e8;
+$border-secondary: #eee;
+$border-alternative: #ccc;
+$border-light: #d3d3d3;
+
+$background-color: (
+  primary: $primary-color,
+  secondary: $secondary-color
+);
+
+$border-color: (
+  primary: $border-primary,
+  secondary: $border-secondary,
+  alternative: $border-alternative,
+  light: $border-light
+);
+
+$font-color: (
+  default: $secondary-color,
+  primary: $text-primary-color,
+  pimary-default-dark: $link-primary-color-dark, 
+  link-default: $link-primary-color,
+  link-secondary: $link-secondary-color,
+  link-active: $link-active
+);
+
+$button-color : (
+  blue: $link-primary-color,
+  blue-hover: $link-primary-color-dark,
+  grey: $alternative-color,
+  grey-hover: $alternative-color-dark
+);

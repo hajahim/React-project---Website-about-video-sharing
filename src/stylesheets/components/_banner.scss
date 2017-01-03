@@ -1,0 +1,37 @@
+.banner {
+  color: #fff;
+  margin: 20px auto; 
+  position: relative;
+  overflow: hidden;
+  height: 410px;
+  width: 980px;
+  &__element {
+    height: 410px;
+    width: 980px;
+    position: absolute;
+    overflow: hidden;
+  }
+  &__image {
+    
+  }
+  &__caption {
+    color: #ffffff;
+    position: absolute;
+    left: 40%;
+    bottom: 40%;
+    &__title {
+
+    }
+    &__content {
+
+    }
+  }
+  &__progressBar {
+    position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		height: 5px;
+		background: rgba(255,255,255,0.6);
+  }
+}

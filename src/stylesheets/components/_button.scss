@@ -1,0 +1,50 @@
+$button-rounded-radius: 2px;
+
+$button-size-modifier: (
+  xsmall: 1px 5px,
+  small: 5px 5px,
+  large: 12px 28px,
+  extra-large: 13px 31px
+);
+
+//btn generic
+.btn {
+  font-size: map-get($font-size, small);
+  text-decoration: none;
+  text-align: center;
+  line-height: 1;
+  white-space: nowrap;
+  vertical-align: middle;
+  letter-spacing: 1px;
+  padding: 10px 10px;
+  display: inline-block;
+
+  //generate button type in the map list background and border
+  @each $name, $color in $button-color {
+    &--#{$name} {
+      background: $color;
+      color: map-get($font-color, default);
+      &:hover {
+        background: map-get($button-color, #{$name}-hover);
+        color: map-get($font-color, default);
+      }
+    }
+  }
+
+  //generate button type dimension in the map list
+  @each $size, $modifier in $button-size-modifier {
+    &--#{$size} {
+      font-size: map-get($font-size, $size);
+      padding: $modifier;
+    }
+  }
+
+  //modificator of button
+  &--rounded {
+    border-radius: $button-rounded-radius; 
+  }
+
+  & > .icon {
+    margin-right: 10px;
+  }
+}
