@@ -1,0 +1,13 @@
+.video {
+  &__object {
+  
+  }
+  &__body {
+    &__title {
+      font-size: map-get($font-size, xlarge);
+    }
+    &__author {
+      font-size: map-get($font-size, medium);
+    }
+  }
+}
