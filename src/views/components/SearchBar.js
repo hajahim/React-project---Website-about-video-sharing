@@ -15,7 +15,8 @@ export default class SearchBar extends React.Component {
           <span className="search-bar__btn__text">search</span>
         </button>
         <div className="search-bar__content">
-          <input className="search-bar__content__input" type="text" name="search_query" placeholder={this.placeHolder} />
+          <label className="search-bar__content__label" htmlFor="search_query">enter key : </label>
+          <input className="search-bar__content__input" type="text" name="search_query" id="search_query" placeholder={this.placeHolder} />
         </div>
       </form> 
     );
