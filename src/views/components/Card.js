@@ -18,7 +18,10 @@ export default class Card extends React.Component {
                 <img src={this.card.img.src} alt={this.card.img.alt} height={this.card.img.height} width={this.card.img.width} />
               </a>
               <span className="card__video-time">{this.card.video_duration}</span>
-              <a className="card__btn-visualize btn btn--grey btn--small btn--rounded" href={`/watch/${this.card.id}`}><i className="icon icon--video"></i></a>
+              <a className="card__btn-visualize btn btn--grey btn--small btn--rounded" href={`/watch/${this.card.id}`}>
+                <i className="icon icon--video"></i>
+                <span className="card__btn-visualize__hidden-text">watch video</span>
+              </a>
             </div>
             <article className="card__body grid__cell 1/1 1/2--thumb">
               <h3 className="card__body__title">

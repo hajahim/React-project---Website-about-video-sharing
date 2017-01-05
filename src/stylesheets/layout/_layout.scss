@@ -27,6 +27,9 @@
     } 
     .header__brand {
       flex: 1;
+      &__name {
+        display: none;
+      }
       &__image {
         background: url('../images/ng-careers-logo.png') no-repeat;
         background-size: contain;

@@ -51,6 +51,9 @@
       bottom: 2px;
       right: 2px;
       opacity: 0;
+      &__hidden-text {
+        display: none;
+      }
       & > .icon {
         margin: 0;
       }

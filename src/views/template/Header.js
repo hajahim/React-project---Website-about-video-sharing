@@ -14,7 +14,8 @@ export default class Header extends React.Component {
         <section className="header__container">
           <div className="box">
             <section className="header__brand">
-              <a href="header__brand__link">
+              <a className="header__brand__link" href="#">
+                <h1 className="header__brand__name">Ng careers</h1>
                 <span className="header__brand__image" title="Accueil Media Player" />
               </a>
             </section>

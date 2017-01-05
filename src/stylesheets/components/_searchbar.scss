@@ -35,6 +35,9 @@
     padding: 5px 26px;
     height: 30px;
     cursor: pointer;
+    &__text {
+      display: none;
+    }
     & > .icon {
       margin: 0;
     }
