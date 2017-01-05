@@ -103,4 +103,25 @@
 .l-player {
   padding-bottom: 20px;
   padding-top: 20px;
+  @media(max-width: 1024px) {
+    padding-right: 20px;
+  }
+}
+
+.l-sidebar {
+  padding: 0 20px 20px 0;
+  .suggest-video {
+    list-style: none;
+    padding: 0;
+    padding-top: 20px;
+    margin: 0;
+  }
+  .card {
+    @media(min-width: 499px) {
+      width: 100%;
+    }
+    @media(min-width: 1024px) {
+      width: 225px;
+    }
+  }
 }

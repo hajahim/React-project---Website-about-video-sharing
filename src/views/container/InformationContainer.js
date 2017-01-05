@@ -8,15 +8,16 @@ export default class InformationContainer extends React.Component {
   }
   componentWillMount() {
     var listeCard = require('../../../data/db-card.js');
-    // for(var i = 0 ; i < listeCard.length ; i++) {
-    //   if(listeCard[i].id === this.props.params.videoID) {
-        
-    //     return;
-    //   }
-    // }
-    this.setState({ cardInfo: listeCard[0] });
+    var cardVisulaize = {};
+    for(var i = 0 ; i < listeCard.length ; i++) {
+      if(listeCard[i].id == this.props.params.videoID) {
+        cardVisulaize = listeCard[i];
+        break;
+      }
+    }
+    this.setState({ cardInfo: cardVisulaize, cardList: listeCard });
   }
   render() {
-    return <Information cardInfo={this.state.cardInfo} />;
+    return <Information cardInfo={this.state.cardInfo} cardList={this.state.cardList} />;
   }
 }

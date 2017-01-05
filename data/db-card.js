@@ -10,7 +10,7 @@ module.exports = [
     video: {
       url: require('../src/video/video1.mp4'),
       height: '350px',
-      width: '600px'
+      width: '710px'
     },
     title: 'Card 1',
     author: 'Content of card 1',
@@ -28,7 +28,7 @@ module.exports = [
     video: {
       url: require('../src/video/video1.mp4'),
       height: '350px',
-      width: '600px'
+      width: '710px'
     },
     title: 'Card 2',
     author: 'Content of card 2',
@@ -46,7 +46,7 @@ module.exports = [
     video: {
       url: require('../src/video/video1.mp4'),
       height: '350px',
-      width: '600px'
+      width: '710px'
     },
     title: 'Card 3',
     author: 'Content of card 3',
@@ -64,7 +64,7 @@ module.exports = [
     video: {
       url: require('../src/video/video1.mp4'),
       height: '350px',
-      width: '600px'
+      width: '710px'
     },
     title: 'Card 4',
     author: 'Content of card 4',
@@ -82,7 +82,7 @@ module.exports = [
     video: {
       url: require('../src/video/video1.mp4'),
       height: '350px',
-      width: '600px'
+      width: '710px'
     },
     title: 'Card 5',
     author: 'Content of card 5',

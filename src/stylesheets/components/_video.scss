@@ -1,6 +1,11 @@
 .video {
   &__object {
-  
+    &__player {
+      @media(max-width: 1024px) {
+        width: 100%;
+        height:  auto;
+      }
+    }
   }
   &__body {
     &__title {
